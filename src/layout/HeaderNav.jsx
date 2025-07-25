@@ -1,35 +1,37 @@
-import React from 'react'
+import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { Navbar, Nav, Container, Image } from 'react-bootstrap';
 
 export const HeaderNav = () => {
-    return (
-        <header className='header'>
-           <div className='logo'>
-                <span>Z
-                </span>
-                <h3>epeda Desarrollodor Web</h3>
-                
-           </div>
+  return (
+    <Navbar bg="light" expand="lg" className="border-bottom py-3">
+      <Container>
+        {/* Logo redondeado*/}
+        <Navbar.Brand as={NavLink} to="/inicio" className="d-flex align-items-center">
+          <Image
+            src="/images/logo.png"
+            roundedCircle
+            width={70}
+            height={70}
+            className="me-2"
+            alt="Logo"/>
+          <span className="fw-light">Desarrollador Web</span>
+        </Navbar.Brand>
 
-            <nav>
-                <ul>
-                    <li>
-                       <NavLink to="/inicio">Inicio</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/portafolio">Portafolio</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/servicios">Servicios</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/curriculum">Curriculum</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/contacto">Contacto</NavLink>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-    )
-}
+        {/* Botón de hamburguesa en móvil */}
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
+        {/* Navegación */}
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto fw-bold text-uppercase">
+            <Nav.Link as={NavLink} to="/inicio">Inicio</Nav.Link>
+            <Nav.Link as={NavLink} to="/portafolio">Portafolio</Nav.Link>
+            <Nav.Link as={NavLink} to="/servicios">Servicios</Nav.Link>
+            <Nav.Link as={NavLink} to="/curriculum">Curriculum</Nav.Link>
+            <Nav.Link as={NavLink} to="/contacto">Contacto</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+};

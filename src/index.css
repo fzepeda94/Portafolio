@@ -31,7 +31,7 @@
 
 .header .logo span{
   display: block;
-  font-size: 75px;
+  font-size: 80px;
   font-weight: bolder;
 }
 
@@ -77,3 +77,35 @@
   padding-top: 10px;
 }
 
+/*.home h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 50px;
+  margin-bottom: 0px;
+}
+
+.home strong{
+  color: rgb(50, 40, 127);
+}
+
+.home h2{
+  color: gray;
+  font-weight: lighter;
+}
+
+.home a{
+  color: rgb(50, 40, 127);
+  text-decoration: none;
+}
+
+.home .heading{
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 0px;
+}
+
+.home p{
+   color: gray;
+}*/
