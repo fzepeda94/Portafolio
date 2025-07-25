@@ -42,7 +42,7 @@ export const Inicio = () => {
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 animate__animated animate__fadeInUp animate__delay-1s">
           <div className="col">
             <div className="card h-100 shadow-sm border-0">
-              <img src="/images/corporativo.png" className="card-img-top" alt="Proyecto Web Corporativo" />
+              <img src={`${import.meta.env.BASE_URL}images/corporativo.png`} className="card-img-top" alt="Proyecto Web Corporativo" />
               <div className="card-body">
                 <h5 className="card-title text-primary">Proyecto Web Corporativo</h5>
                 <p className="card-text text-muted">
